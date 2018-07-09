@@ -7,7 +7,7 @@ puts "Welcome to Tic Tac Toe!"
 board = [" ", " ", " ", " ", " ", " ", " ", " ", " "]
 display_board(board)
 index = ask_user_for_move
-while index < 0 || index > 8
+while index < 0 || index > 9
   index = ask_user_for_move
 end
 move(board, index)
