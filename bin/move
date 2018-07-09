@@ -9,10 +9,11 @@ display_board(board)
 ask_user_for_move = "Where would you like to go?"
 puts ask_user_for_move
 input = gets.strip
-while input < 1 || input > 9
+index = input_to_index(input)
+while index < 1 || index > 9
   puts ask_user_for_move
   input = gets.strip
+  index = input_to_index(input)
 end
-index = input_to_index(input)
 move(board, index)
 display_board(board)
