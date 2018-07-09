@@ -14,3 +14,9 @@ end
 def move(board, index, character="X")
   board[index] = character
 end
+
+def ask_user_for_move
+  puts "Where would you like to go?"
+  input = gets.strip
+  index = input_to_index(input)
+end
